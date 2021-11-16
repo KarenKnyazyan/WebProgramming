@@ -1,10 +1,3 @@
-/*
-Create author.service.js, it should have
-    -AuthorService model
-    -Service should have Local  JSON string of authors
-    -Service should have getAuthors() function, which returns Promise of array of author models
- */
-
 class AuthorService {
     static authors = `[
         {
