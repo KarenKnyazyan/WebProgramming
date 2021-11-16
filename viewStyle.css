@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+
+body {
+    background-image: url("./124383.jpg");
+}
+
+#BookListHeading {
+    background-color: #772b01;
+    opacity: 0.9;
+    height: 80px;
+    position: relative;
+    top: -50px;
+    padding: 0;
+
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    border-radius: 5px;
+
+    box-shadow: 3px 1px 5px rgba(119, 43, 1, 0.7),
+    3px -3px 5px rgba(119, 43, 1, 0.7),
+    -3px -3px 5px rgba(119, 43, 1, 0.7),
+    -3px 1px 5px rgba(119, 43, 1, 0.7);
+
+    display: flex;
+}
+
+/*
+#BookListHeading {
+    background-color: #772b01;
+    opacity: 0.9;
+    height: 80px;
+    position: relative;
+    top: -50px;
+    padding: 0;
+
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    border-radius: 5px;
+
+    box-shadow: 3px 1px 5px rgba(119, 43, 1, 0.7),
+    3px -3px 5px rgba(119, 43, 1, 0.7),
+    -3px -3px 5px rgba(119, 43, 1, 0.7),
+    -3px 1px 5px rgba(119, 43, 1, 0.7);
+}
+*/
+
+span {
+    color: #ffd400;
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: normal;
+    /*font-style: italic;*/
+    /*margin-left: 180px;*/
+    /*line-height: 60px;*/
+    position: relative;
+    top: 5px;
+    padding: 0;
+}
+
+#my {
+    margin-left: 310px;
+}
+
+#book {
+    margin-left: 20px;
+}
+
+#list {
+    margin-left: 25px;
+}
+
+#renderedRows{
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', serif;
+    position: relative;
+    top: -85px;
+    left: 630px;
+}
+
+table {
+    background-color: #fabc52;
+    border: 1px solid black;
+    position: relative;
+    top: -75px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 0;
+
+    opacity: 0.85;
+    box-shadow: 3px 3px 5px rgba(250, 188, 82, 0.7),
+    3px -1px 5px rgba(250, 188, 82, 0.7),
+    -3px -1px 5px rgba(250, 188, 82, 0.7),
+    -3px 3px 5px rgba(250, 188, 82, 0.7);
+}
+
+th, tr, td{
+    background-color: #fabc52;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+th:hover{
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: #a24100;
+    cursor: pointer;
+}
+
+th{
+    padding: 0;
+    font-weight: bolder;
+    font-family: 'Chakra Petch';
+}
+
+td{
+    font-size: 15px;
+    font-family: 'Merienda';
+}
+
+option {
+
+    background-color: #fabc52;
+    /*font-family: 'Cinzel', serif;*/
+    /*display: none;*/
+
+    border-radius: 5px;
+}
+
+#AuthorPopup{
+    background-color: #d16808;
+    opacity: 0.9;
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: 'Poiret One';
+}
+
+#BookPopup{
+    background-color: #d16808;
+    opacity: 0.9;
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+
+    font-weight: bolder;
+    font-size: 17px;
+    font-family: 'Poiret One';
+}
+
+#authorPopupCloseButton{
+    background-color: #772b01;
+
+    height: 22px;
+    width: 22px;
+    color: #fabc52;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 160px;
+    left: 258px;
+}
+
+#authorPopupCloseButton:hover, #bookPopupCloseButton:hover{
+    cursor: pointer;
+}
+
+#bookPopupCloseButton{
+    background-color: #772b01;
+
+    height: 22px;
+    width: 22px;
+    color: #fabc52;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 310px;
+    left: 262px;
+}
+
+#selectAuthor{
+    background-color: #fabc52;
+    position: relative;
+    bottom: 5px;
+    left: -525px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Merienda';
+
+    height: 25px;
+}
+
+#selectAuthor:hover{
+    cursor: pointer;
+}
+
+#inputPageCount{
+    width: 100px;
+    background-color: #fabc52;
+    position: relative;
+    bottom: -15px;
+    right: 240px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-family: 'Merienda';
+
+    height: 15px;
+}
+
+#selectPageCount{
+    background-color: #fabc52;
+    position: relative;
+    bottom: 7px;
+    right: 117px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-family: 'Merienda';
+
+    height: 20px;
+}
+
+#selectPageCount:hover{
+    cursor: pointer;
+}
+
+#PageCountFilterButton{
+    background-color: #d16808;
+    position: relative;
+    bottom: -13px;
+    right: -610px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-family: 'Merienda';
+}
+
+#PageCountFilterButton:hover{
+    cursor: pointer;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#inputReadOn{
+    width: 120px;
+    background-color: #fabc52;
+    position: relative;
+    bottom: 8px;
+    left: 740px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-family: 'Merienda';
+}
+
+#ReadOnFilterButton{
+    background-color: #d16808;
+    position: relative;
+    bottom: -15px;
+    right: -660px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-family: 'Merienda';
+}
+
+#ReadOnFilterButton:hover{
+    cursor: pointer;
+}
+
+
+#titleArrow{
+    color: black;
+
+    font-family: 'Josefin Sans', serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    position: relative;
+    bottom: 10px;
+    left: -120px;
+
+    padding: 0;
+
+    display: none;
+}
+
+#authorArrow{
+    color: black;
+
+    font-family: 'Josefin Sans', serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    position: relative;
+    bottom: 10px;
+    left: -120px;
+
+    padding: 0;
+
+    display: none;
+}
+
+#pageCountArrow{
+    color: black;
+
+    font-family: 'Josefin Sans', serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    position: relative;
+    bottom: 10px;
+    left: -90px;
+
+    padding: 0;
+
+    display: none;
+}
+
+#readOnArrow{
+    color: black;
+
+    font-family: 'Josefin Sans', serif;
+    font-weight: lighter;
+    font-size: 15px;
+
+    position: relative;
+    bottom: 10px;
+    left: -95px;
+
+    padding: 0;
+
+    display: none;
+}
